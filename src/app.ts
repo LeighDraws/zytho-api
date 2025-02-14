@@ -16,11 +16,11 @@ app.use(express.json());
 
 app.use(cors());
 
-app.use("/beers", cors(), beersRoutes);
-app.use("/breweries", cors(), breweriesRoutes);
-app.use("/users", cors(), usersRoutes);
-app.use("/auth", cors(), authRoutes);
-app.use("/fave", cors(), faveRoutes);
+app.use("/beers", beersRoutes);
+app.use("/breweries", breweriesRoutes);
+app.use("/users", usersRoutes);
+app.use("/auth", authRoutes);
+app.use("/fave", faveRoutes);
 
 setupSwagger(app)
 
